@@ -23,6 +23,9 @@ class MainActivity : BaseActivity() {
     override fun setValues() {
         token = intent.getStringExtra("token")!!
         Log.d("로그인한 유저 토큰", token)
+        //    토큰을 가지고 사용자 정보 불러오기.
+
+
     }
 
 }

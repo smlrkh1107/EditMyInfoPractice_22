@@ -16,6 +16,8 @@ class User {
 
             parsedUser.category = Category.getCategoryFromJson(json.getJSONObject("category"))
 
+//            parsedUser.createdAt.set()
+
             return parsedUser
         }
     }
@@ -26,7 +28,10 @@ class User {
     var phoneNum = ""
     var memo = ""
 
-    var createdAt = Calendar.getInstance()
+
+//    val 만들어도 괜찮아. 유저가입 일시 알기 위해 생성.
+//    Calendar()는 private로 막혀있다!~ getInstance붙여줘야 돼
+    var createdAt = Calendar.getInstance()  //서버에서 날짜데이터 그냥 string으로 받아옴..
     var category = Category()
 
 }
